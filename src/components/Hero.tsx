@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
-import { Link } from 'react-scroll';
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { Link } from "react-scroll";
+import CounterUp from "./CounterUp";
 
 const Hero = () => {
   return (
@@ -18,8 +19,9 @@ const Hero = () => {
             Front-End Developer
           </h2>
           <p className="max-w-2xl mx-auto text-gray-300 mb-12">
-            I build modern, responsive, and dynamic web applications using React.js and Next.js. 
-            Passionate about creating exceptional user experiences through clean and efficient code.
+            I build modern, responsive, and dynamic web applications using
+            React.js and Next.js. Passionate about creating exceptional user
+            experiences through clean and efficient code.
           </p>
           <div className="flex justify-center space-x-4">
             <a
@@ -36,10 +38,13 @@ const Hero = () => {
             >
               Contact Me
             </a>
+            <div className="h-24 flex items-center justify-center">
+              <CounterUp end={200} />
+            </div>
           </div>
         </motion.div>
       </div>
-      
+
       <Link
         to="about"
         spy={true}
