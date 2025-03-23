@@ -61,10 +61,8 @@ const About = () => {
               </p>
 
               <a
-                href="/resume/AlokkumarCV.pdf"
+                href="https://drive.google.com/file/d/1OZza08zQmapvObD5td1i3RJLq46ZouRa/view?usp=sharing"
                 target="_blank"
-                download="AlokKumarCV.pdf"
-                rel="noopener noreferrer"
                 className="flex items-center py-5 font-bold text-gray-400 hover:text-white"
               >
                 <ExternalLink size={18} className="mr-2" />
