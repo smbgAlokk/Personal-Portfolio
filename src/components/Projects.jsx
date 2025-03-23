@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Employee Management System",
       description:
         "A comprehensive system built with React, Vite, and Tailwind CSS featuring role-based access control, real-time performance tracking, and automated reports.",
-      image: "/Public/EMS.png",
+      image: "/Public/Image/EMS.png",
       github: "https://github.com/smbgAlokk/employee-management",
       tech: ["React", "Vite", "Tailwind CSS", "Context API"],
     },
@@ -15,7 +15,7 @@ const Projects = () => {
       title: "TipTap Text Editor",
       description:
         "A customizable Rich Text Editor built using React and TipTap with advanced text formatting capabilities and a modern, responsive UI.",
-      image: "/Public/TipTap.png",
+      image: "/Public/Image/TipTap.png",
       github: "https://github.com/smbgAlokk/tiptap-editor",
       live: "https://tiptaptexteditor.netlify.app/",
       tech: ["React", "TipTap", "Tailwind CSS"],
