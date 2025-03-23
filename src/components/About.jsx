@@ -17,7 +17,7 @@ const About = () => {
             {/* Image Section */}
             <div className="flex justify-center">
               <img
-                src="/Images/Alok-removebg-preview.png"
+                src="/Public/Alok.png"
                 alt="Developer workspace"
                 className="w-64 sm:w-80 md:w-96 lg:w-[500px] h-auto rounded-xl shadow-xl 
                 bg-gradient-to-t from-white/10 via-white/5 to-transparent backdrop-blur-md"
