@@ -2,29 +2,15 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-interface CounterUpProps {
-  start?: number;
-  end: number;
-  duration?: number;
-}
-
-const CounterUp: React.FC<CounterUpProps> = ({
-  start = 0,
-  end,
-  duration = 2,
-}) => {
-  const [count, setCount] = useState<number>(start);
+const CounterUp = ({ start = 20, end, duration = 5 }) => {
+  const [count, setCount] = useState(start);
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
-
-  console.log("CounterUp Mounted"); // ✅ Log when component renders
-  console.log("In View:", inView); // ✅ Log when element is in view
 
   useEffect(() => {
     if (inView) {
-      console.log("Counter Started!"); // ✅ Log when counter animation starts
-      let startTime: number | null = null;
+      let startTime = null;
 
-      const step = (timestamp: number) => {
+      const step = (timestamp) => {
         if (startTime === null) startTime = timestamp;
         const progress = Math.min(
           (timestamp - startTime) / (duration * 1000),
@@ -47,13 +33,16 @@ const CounterUp: React.FC<CounterUpProps> = ({
       href="https://leetcode.com/u/smbgAlok/"
       target="_blank"
       rel="noopener noreferrer"
-      className="bg-red-500 text-white text-2xl font-bold px-6 py-3 rounded-lg shadow-lg transition transform hover:scale-105"
+      className="block sm:w-auto bg-primary-dark hover:bg-primary text-white text-lg sm:text-lg md:text-xl font-semibold px-4 sm:px-6 py-3 rounded-xl shadow-lg 
+       transform transition-colors duration-300 cursor-pointer hover:scale-105 hover:shadow-2xl text-center mx-auto"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
       LeetCode Questions Solved:{" "}
-      <motion.span className="text-yellow-300">{count}+</motion.span>
+      <motion.span className="text-orange-300 font-bold text-xl sm:text-2xl md:text-3xl">
+        {count}+
+      </motion.span>
     </motion.a>
   );
 };

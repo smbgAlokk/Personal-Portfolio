@@ -23,7 +23,10 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="bg-dark">
+    <section
+      id="projects"
+      className="bg-gradient-to-b from-dark to-dark-lighter text-white"
+    >
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

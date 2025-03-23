@@ -1,9 +1,12 @@
-import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Briefcase, ExternalLink } from "lucide-react";
 
 const Experience = () => {
   return (
-    <section id="experience" className="bg-dark">
+    <section
+      id="experience"
+      className="bg-gradient-to-b from-dark to-dark-lighter text-white"
+    >
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -18,7 +21,21 @@ const Experience = () => {
                 <div className="w-4 h-4 rounded-full bg-primary" />
               </div>
               <div className="mb-4">
-                <h3 className="text-xl font-semibold text-white">Front-End Developer Intern</h3>
+                <h3 className="text-xl font-semibold text-white">
+                  Front-End Developer Intern{" "}
+                  <a
+                    href="/resume/IntershipCertificate.pdf"
+                    target="_blank"
+                    download="IntershipCertificate.pdf"
+                    rel="noopener noreferrer"
+                    className="flex items-center  text-[.8rem] font-thin text-gray-400 hover:text-white"
+                  >
+                    <ExternalLink size={18} className="mr-2" />
+                    <span className="text-white  hover:text-red-400">
+                      Intership Certificate
+                    </span>
+                  </a>
+                </h3>
                 <p className="text-primary">Pug Esports Academy, Delhi</p>
                 <p className="text-gray-400">April 2024 - July 2024</p>
               </div>
@@ -29,15 +46,23 @@ const Experience = () => {
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
-                  <span>Integrated REST APIs, improving data-fetching speed by 25%</span>
+                  <span>
+                    Integrated REST APIs, improving data-fetching speed by 25%
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
-                  <span>Optimized rendering performance using React.memo and useCallback</span>
+                  <span>
+                    Optimized rendering performance using React.memo and
+                    useCallback
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
-                  <span>Used Git for version control and collaborated with backend teams</span>
+                  <span>
+                    Used Git for version control and collaborated with backend
+                    teams
+                  </span>
                 </li>
               </ul>
             </div>

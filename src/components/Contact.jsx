@@ -1,9 +1,9 @@
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-dark-light">
+    <section id="contact" className="bg-dark-lighter">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,8 +14,9 @@ const Contact = () => {
           <h2 className="section-title">Contact</h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-center text-gray-300 mb-12">
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
-              I'll try my best to get back to you!
+              I'm currently looking for new opportunities. Whether you have a
+              question or just want to say hi, I'll try my best to get back to
+              you!
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-6">
