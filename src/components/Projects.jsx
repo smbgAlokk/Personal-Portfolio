@@ -17,7 +17,7 @@ const Projects = () => {
         "A customizable Rich Text Editor built using React and TipTap with advanced text formatting capabilities and a modern, responsive UI.",
       image: "/Public/TipTap.png",
       github: "https://github.com/smbgAlokk/tiptap-editor",
-      live: "https://tiptap-editor-demo.netlify.app",
+      live: "https://tiptaptexteditor.netlify.app/",
       tech: ["React", "TipTap", "Tailwind CSS"],
     },
   ];
