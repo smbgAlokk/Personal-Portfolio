@@ -24,9 +24,9 @@ const Experience = () => {
                 <h3 className="text-xl font-semibold text-white">
                   Front-End Developer Intern{" "}
                   <a
-                    href="/resume/IntershipCertificate.pdf"
+                    href="https://drive.google.com/file/d/1HgV77t0y0W4k9oJ1X-Pg_g2VPpqRoPnH/view?usp=sharing"
                     target="_blank"
-                    download="IntershipCertificate.pdf"
+                    // download="IntershipCertificate.pdf"
                     rel="noopener noreferrer"
                     className="flex items-center  text-[.8rem] font-thin text-gray-400 hover:text-white"
                   >
