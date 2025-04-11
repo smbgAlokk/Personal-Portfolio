@@ -24,7 +24,7 @@ const CodingMusicJourney = () => {
             >
               LeetCode Questions Solved:
               <span className="text-primary font-bold block text-3xl mt-2">
-                200+ ✅
+                230+ ✅
               </span>
             </a>
           </motion.div>

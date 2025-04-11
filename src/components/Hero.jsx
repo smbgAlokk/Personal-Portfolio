@@ -44,7 +44,7 @@ const Hero = () => {
               Contact Me
             </Link>
             <div className="w-full sm:w-auto">
-              <CounterUp end={200} />
+              <CounterUp end={230} />
             </div>
           </div>
         </motion.div>
