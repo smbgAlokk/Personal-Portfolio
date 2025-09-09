@@ -3,6 +3,7 @@ import { Github, ExternalLink, BarChart, FileSpreadsheet, Database } from "lucid
 import { useState } from "react";
 
 const Projects = () => {
+  const [activeProject, setActiveProject] = useState(0);
   const projects = [
     {
       title: "Diwali Sales Data Analysis",
@@ -65,21 +66,21 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-gradient-to-b from-primary to-primary-light text-white"
+      className="bg-gradient-to-b from-primary to-primary-light text-white py-10 sm:py-12 md:py-16"
     >
-      <div className="section-container">
+      <div className="section-container px-3 sm:px-4 md:px-6 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Projects <span className="text-accent">(Data Focus)</span></h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-center">Projects <span className="text-accent">(Data Focus)</span></h2>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="bg-primary-light rounded-lg overflow-hidden border border-accent/20 h-[450px] perspective-1000"
+                className="bg-primary-light rounded-lg overflow-hidden border border-accent/20 h-[350px] xs:h-[400px] sm:h-[450px] perspective-1000"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}

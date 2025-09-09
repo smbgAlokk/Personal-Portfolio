@@ -16,26 +16,26 @@ const Hero = () => {
   const { isDarkMode } = useContext(ThemeContext);
 
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-gradient-to-b from-primary to-primary-light dark:bg-gradient-to-b dark:from-primary dark:to-primary-light light:bg-gradient-to-b light:from-light-primary light:to-light-primary-dark relative overflow-hidden">
-      <div className="max-w-4xl w-full">
+    <section className="min-h-screen flex flex-col items-center justify-center px-3 sm:px-4 md:px-6 py-8 sm:py-12 text-center bg-gradient-to-b from-primary to-primary-light dark:bg-gradient-to-b dark:from-primary dark:to-primary-light light:bg-gradient-to-b light:from-light-primary light:to-light-primary-dark relative overflow-hidden">
+      <div className="max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-6">
             Hi, I'm <span className="text-accent">Alok Kumar</span> 👋
           </h1>
-          <h2 className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-4">
+          <h2 className="text-base xs:text-lg sm:text-xl md:text-2xl text-gray-300 mb-2 sm:mb-3 md:mb-4">
             <span className="text-accent">Data Analyst</span> |{" "}
             <span className="text-highlight">Aspiring Data Engineer</span>
           </h2>
-          <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4">
+          <p className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-2 sm:mb-3 md:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-highlight">
               Transforming Data into Insights & Action
             </span>
           </p>
-          <p className="max-w-2xl mx-auto text-gray-300 mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
+          <p className="max-w-full sm:max-w-xl md:max-w-2xl mx-auto text-gray-300 mb-4 sm:mb-5 md:mb-6 text-xs xs:text-sm sm:text-base md:text-lg leading-relaxed">
             Skilled in Excel, SQL (PostgreSQL), Power BI, Python, Pandas, Numpy,
             Seaborn, Matplotlib
           </p>
@@ -141,12 +141,12 @@ const Hero = () => {
           </div>
 
           {/* Buttons & Counter */}
-          <div className="flex flex-wrap justify-center gap-4 z-10">
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 z-10">
             <motion.a
               href="https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative z-50 px-5 py-2.5 bg-highlight hover:bg-highlight-light font-medium text-primary rounded-md shadow-md border border-highlight/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-2 text-sm"
+              className="relative z-50 px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 bg-highlight hover:bg-highlight-light font-medium text-primary rounded-md shadow-md border border-highlight/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base"
               whileHover={{
                 scale: 1.05,
                 boxShadow:
@@ -154,7 +154,8 @@ const Hero = () => {
               }}
               whileTap={{ scale: 0.95 }}
             >
-              <FileText size={16} />
+              <FileText size={16} className="hidden sm:block" />
+              <FileText size={14} className="sm:hidden" />
               View My Resume
             </motion.a>
 
@@ -164,7 +165,7 @@ const Hero = () => {
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="relative z-50 px-5 py-2.5 bg-accent hover:bg-accent-light font-medium text-white rounded-md shadow-md border border-accent/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-2 text-sm"
+              className="relative z-50 px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 bg-accent hover:bg-accent-light font-medium text-white rounded-md shadow-md border border-accent/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base"
               whileHover={{
                 scale: 1.05,
                 boxShadow:
@@ -172,36 +173,43 @@ const Hero = () => {
               }}
               whileTap={{ scale: 0.95 }}
             >
-              <Briefcase size={16} />
+              <Briefcase size={16} className="hidden sm:block" />
+              <Briefcase size={14} className="sm:hidden" />
               Hire Me
             </motion.button>
 
-            <div className="w-full sm:w-auto mt-4 sm:mt-0">
+            <div className="w-full sm:w-auto mt-3 sm:mt-4">
               <CounterUp end={230} />
             </div>
 
             {/* Data Visualization Icons */}
-            <div className="flex gap-4 mt-6 justify-center">
+            <div className="flex gap-2 xs:gap-3 sm:gap-4 mt-4 sm:mt-5 md:mt-6 justify-center">
               <motion.div
-                className="p-3 bg-primary-dark rounded-full border border-accent/30"
+                className="p-2 xs:p-2.5 sm:p-3 bg-primary-dark rounded-full border border-accent/30"
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <BarChart size={24} className="text-accent" />
+                <BarChart size={18} className="text-accent xs:hidden" />
+                <BarChart size={20} className="text-accent hidden xs:block sm:hidden" />
+                <BarChart size={24} className="text-accent hidden sm:block" />
               </motion.div>
               <motion.div
-                className="p-3 bg-primary-dark rounded-full border border-highlight/30"
+                className="p-2 xs:p-2.5 sm:p-3 bg-primary-dark rounded-full border border-highlight/30"
                 whileHover={{ scale: 1.1, rotate: -10 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <LineChart size={24} className="text-highlight" />
+                <LineChart size={18} className="text-highlight xs:hidden" />
+                <LineChart size={20} className="text-highlight hidden xs:block sm:hidden" />
+                <LineChart size={24} className="text-highlight hidden sm:block" />
               </motion.div>
               <motion.div
-                className="p-3 bg-primary-dark rounded-full border border-accent/30"
+                className="p-2 xs:p-2.5 sm:p-3 bg-primary-dark rounded-full border border-accent/30"
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <PieChart size={24} className="text-accent" />
+                <PieChart size={18} className="text-accent xs:hidden" />
+                <PieChart size={20} className="text-accent hidden xs:block sm:hidden" />
+                <PieChart size={24} className="text-accent hidden sm:block" />
               </motion.div>
             </div>
           </div>

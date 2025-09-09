@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { BarChart, LineChart, PieChart, ChevronLeft, ChevronRight, Database, TrendingUp } from 'lucide-react';
 
 const DataVisualization = () => {
+  const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const [activeChart, setActiveChart] = useState('bar');
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -215,29 +216,29 @@ const DataVisualization = () => {
   }, [activeChart, currentIndex]);
   
   return (
-    <section id="visualization" className="bg-gradient-to-b from-primary-light to-primary dark:bg-gradient-to-b dark:from-primary-light dark:to-primary light:bg-gradient-to-b light:from-light-primary-dark light:to-light-primary text-white dark:text-white light:text-light-text">
-      <div className="section-container">
+    <section id="visualization" className="bg-gradient-to-b from-primary-light to-primary dark:bg-gradient-to-b dark:from-primary-light dark:to-primary light:bg-gradient-to-b light:from-light-primary-dark light:to-light-primary text-white dark:text-white light:text-light-text py-10 sm:py-12 md:py-16">
+      <div className="section-container px-3 sm:px-4 md:px-6 max-w-6xl mx-auto" ref={containerRef}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Data Visualization <span className="text-accent">📊</span></h2>
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-center">Data Visualization <span className="text-accent">📊</span></h2>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8 md:mb-12">
             {/* Canvas Visualization */}
             <motion.div 
-              className="bg-primary-light dark:bg-primary-light light:bg-light-primary p-6 rounded-xl border border-accent/20 relative"
+              className="bg-primary-light dark:bg-primary-light light:bg-light-primary p-3 xs:p-4 sm:p-6 rounded-xl border border-accent/20 relative"
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              <div className="flex justify-between items-center mb-4">
+              <div className="flex justify-between items-center mb-2 xs:mb-3 sm:mb-4">
                 <div className="flex items-center">
-                  {visualizationData[currentIndex].icon}
-                  <h3 className="text-xl font-semibold text-accent ml-2">
+                  <span className="text-accent">{visualizationData[currentIndex].icon}</span>
+                  <h3 className="text-base xs:text-lg sm:text-xl font-semibold text-accent ml-2">
                     {visualizationData[currentIndex].title}
                   </h3>
                 </div>

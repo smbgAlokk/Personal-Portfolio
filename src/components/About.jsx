@@ -3,7 +3,7 @@ import { ExternalLink, Database, Code, Music, LineChart, BarChart, PieChart } fr
 
 const About = () => {
   return (
-    <section id="about" className="bg-primary-light dark:bg-primary-light light:bg-light-primary py-16 px-6">
+    <section id="about" className="bg-primary-light dark:bg-primary-light light:bg-light-primary py-10 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,22 +11,22 @@ const About = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-center">About Me</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center">
             {/* Image Section */}
             <div className="flex justify-center">
               <img
                 src="/Images/Alok.png"
                 alt="Developer workspace"
-                className="w-64 sm:w-80 md:w-96 lg:w-[500px] h-auto rounded-xl shadow-xl 
+                className="w-56 xs:w-64 sm:w-80 md:w-96 lg:w-[500px] h-auto rounded-xl shadow-xl 
                 bg-gradient-to-t from-white/10 via-white/5 to-transparent backdrop-blur-md"
               />
             </div>
 
             {/* Text Section */}
             <div>
-              <p className="text-gray-300 text-lg leading-relaxed mb-6">
+              <p className="text-gray-300 text-base xs:text-lg leading-relaxed mb-4 sm:mb-6">
                 I'm an enthusiastic{" "}
                 <span className="text-accent font-semibold">
                   Data Analyst
@@ -35,18 +35,18 @@ const About = () => {
               </p>
               
               {/* Skills with Icons */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 xs:gap-4 mb-4 sm:mb-6">
                 <motion.div 
-                  className="flex items-center p-3 bg-primary-dark rounded-lg border border-accent/20"
+                  className="flex items-center p-2 xs:p-3 bg-primary-dark rounded-lg border border-accent/20"
                   whileHover={{ scale: 1.03 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
-                  <div className="p-2 bg-primary rounded-full mr-3">
-                    <Database className="text-accent" size={20} />
+                  <div className="p-1.5 xs:p-2 bg-primary rounded-full mr-2 xs:mr-3">
+                    <Database className="text-accent" size={16} />
                   </div>
                   <div>
-                    <h3 className="font-medium text-accent">📊 Data Analytics</h3>
-                    <p className="text-sm text-gray-400">SQL, Excel, Power BI</p>
+                    <h3 className="font-medium text-accent text-sm xs:text-base">📊 Data Analytics</h3>
+                    <p className="text-xs xs:text-sm text-gray-400">SQL, Excel, Power BI</p>
                   </div>
                 </motion.div>
                 
