@@ -143,7 +143,7 @@ const Hero = () => {
           {/* Buttons & Counter */}
           <div className="flex flex-wrap justify-center gap-4 z-10">
             <motion.a
-              href="/AlokkumarCV.pdf"
+              href="https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="relative z-50 px-5 py-2.5 bg-highlight hover:bg-highlight-light font-medium text-primary rounded-md shadow-md border border-highlight/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-2 text-sm"
