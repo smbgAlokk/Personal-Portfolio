@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="bg-dark-light py-16 px-6">
+    <section id="about" className="bg-primary-light py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -27,37 +27,21 @@ const About = () => {
             {/* Text Section */}
             <div>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                I am a passionate{" "}
-                <span className="text-primary font-semibold">
-                  Full Stack Developer
+                I'm an enthusiastic{" "}
+                <span className="text-accent font-semibold">
+                  Data Analyst
                 </span>{" "}
-                with a strong foundation in React.js, Next.js, and API
-                integration. Currently pursuing a B.Tech in Computer Science &
-                Engineering, I blend technical expertise with creative
-                problem-solving to build seamless web experiences.
+                with a passion for finding insights in raw data. Skilled in Excel, SQL, Power BI, and Python (Pandas, Numpy, Seaborn, Matplotlib), I specialize in cleaning, visualizing, and transforming data into clear business stories. Currently exploring Data Engineering to build scalable data pipelines. My journey started in Web Development, giving me an extra edge in building interactive dashboards and data apps.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                During my internship at{" "}
-                <span className="text-primary font-semibold">
-                  Pug Esports Academy
+                My expertise includes{" "}
+                <span className="text-accent font-semibold">
+                  Data Analysis, Data Visualization, and Business Intelligence
                 </span>
-                , I optimized data-fetching performance by 25%, improved UI
-                responsiveness, and collaborated on real-world projects. With
-                200+ questions solved on LeetCode, I continuously refine my
-                problem-solving skills
+                . I'm passionate about transforming complex datasets into actionable insights that drive business decisions and create value.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Beyond coding, I am deeply passionate about{" "}
-                <span className="text-primary font-semibold">music</span>. I
-                share my musical journey through my{" "}
-                <span className="text-primary font-semibold">
-                  YouTube Channel
-                </span>{" "}
-                and{" "}
-                <span className="text-primary font-semibold">Instagram</span>,
-                where I perform and create compositions. My goal is to bridge
-                technology and creativity, crafting both impactful applications
-                and immersive musical experiences.
+                When I'm not analyzing data, you'll find me exploring new data visualization techniques, learning about big data technologies, or participating in data science competitions. I believe in continuous learning and staying updated with the latest industry trends in data analytics and engineering.
               </p>
 
               <a
@@ -66,7 +50,7 @@ const About = () => {
                 className="flex items-center py-5 font-bold text-gray-400 hover:text-white"
               >
                 <ExternalLink size={18} className="mr-2" />
-                <span className="text-primary-light  hover:text-red-400">
+                <span className="text-accent hover:text-highlight">
                   Download Resume
                 </span>
               </a>

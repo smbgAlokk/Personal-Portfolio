@@ -3,39 +3,31 @@ import { motion } from "framer-motion";
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages",
-      skills: ["JavaScript", "C++", "Python (familiar)"],
+      title: "Data Analytics",
+      skills: ["Excel", "SQL (PostgreSQL)", "Power BI", "Data Cleaning", "Data Visualization", "Business Intelligence"],
     },
     {
-      title: "Frontend",
-      skills: ["React.js", "Next.js", "Tailwind CSS", "HTML", "CSS"],
+      title: "Python Libraries",
+      skills: ["Pandas", "NumPy", "Seaborn", "Matplotlib", "Scikit-learn"],
     },
     {
-      title: "State Management",
-      skills: ["React Context API", "Redux (familiar)"],
+      title: "Database",
+      skills: ["PostgreSQL", "MySQL", "MongoDB", "Data Modeling", "Query Optimization"],
     },
     {
-      title: "AI Tools",
-      skills: ["ChatGPT", "Bolt", "V0", "Cloud", "Cursor"],
+      title: "Tools & Platforms",
+      skills: ["Jupyter Notebook", "VS Code", "Git", "GitHub", "Tableau"],
     },
     {
-      title: "Tools & Others",
-      skills: [
-        "Git",
-        "GitHub",
-        "Chrome DevTools",
-        "React Profiler",
-        "Lighthouse",
-        "Vite",
-        "Webpack",
-      ],
+      title: "Web Development",
+      skills: ["React", "Next.js", "Node.js", "Tailwind CSS", "RESTful APIs"],
     },
   ];
 
   return (
     <section
       id="skills"
-      className="bg-gradient-to-b from-dark to-dark-lighter text-white"
+      className="bg-gradient-to-b from-primary-light to-primary text-white"
     >
       <div className="section-container">
         <motion.div
@@ -44,17 +36,17 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title">Skills</h2>
+          <h2 className="section-title">Skills <span className="text-accent">(Data Focus)</span></h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center">
             {skillCategories.map((category, index) => (
               <div
                 key={index}
-                className="bg-dark-light p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 w-full max-w-xs text-center"
+                className="bg-primary-dark p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 w-full max-w-xs text-center border border-accent/20"
               >
-                <h3 className="text-2xl font-semibold">{category.title}</h3>
+                <h3 className="text-2xl font-semibold text-accent mb-4">{category.title}</h3>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="skill-tag bg-primary">
+                    <span key={skillIndex} className="px-2 py-1 bg-primary text-accent text-xs rounded-full m-1">
                       {skill}
                     </span>
                   ))}
