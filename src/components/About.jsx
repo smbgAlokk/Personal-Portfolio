@@ -151,21 +151,20 @@ const About = () => {
                 continuous learning and staying updated with the latest industry
                 trends in data analytics and engineering.
               </p>
-              <div>
-                <motion.a
-                  href="/Resume/AlokkumarCV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center py-5 font-bold text-gray-400 hover:text-white"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <ExternalLink size={18} className="mr-2" />
-                  <span className="text-accent hover:text-highlight">
-                    Download Resume
-                  </span>
-                </motion.a>
-              </div>
+
+              <motion.a
+                href="/Resume/AlokkumarCV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center py-5 font-bold text-gray-400 hover:text-white"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <ExternalLink size={18} className="mr-2" />
+                <span className="text-accent hover:text-highlight">
+                  Download Resume
+                </span>
+              </motion.a>
             </div>
           </div>
         </motion.div>
