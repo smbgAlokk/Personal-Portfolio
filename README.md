@@ -23,7 +23,7 @@ Install these extensions for a better development experience:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/smbgAlokk/alok-kumar-portfolio.git
+   git clone https://github.com/smbgAlokk/Personal-Portfolio.git
    cd alok-kumar-portfolio
    ```
 
