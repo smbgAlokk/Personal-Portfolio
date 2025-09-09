@@ -1,13 +1,20 @@
 import { motion } from "framer-motion";
-import { ChevronDown, FileText, Briefcase, BarChart, LineChart, PieChart } from "lucide-react";
+import {
+  ChevronDown,
+  FileText,
+  Briefcase,
+  BarChart,
+  LineChart,
+  PieChart,
+} from "lucide-react";
 import { Link } from "react-scroll";
 import CounterUp from "./CounterUp";
-import { useContext } from "react";  
+import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
 const Hero = () => {
   const { isDarkMode } = useContext(ThemeContext);
-  
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center bg-gradient-to-b from-primary to-primary-light dark:bg-gradient-to-b dark:from-primary dark:to-primary-light light:bg-gradient-to-b light:from-light-primary light:to-light-primary-dark relative overflow-hidden">
       <div className="max-w-4xl w-full">
@@ -20,13 +27,17 @@ const Hero = () => {
             Hi, I'm <span className="text-accent">Alok Kumar</span> 👋
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-4">
-            <span className="text-accent">Data Analyst</span> | <span className="text-highlight">Aspiring Data Engineer</span>
+            <span className="text-accent">Data Analyst</span> |{" "}
+            <span className="text-highlight">Aspiring Data Engineer</span>
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-4">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-highlight">Transforming Data into Insights & Action</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-highlight">
+              Transforming Data into Insights & Action
+            </span>
           </p>
           <p className="max-w-2xl mx-auto text-gray-300 mb-6 text-sm sm:text-base md:text-lg leading-relaxed">
-            Skilled in Excel, SQL (PostgreSQL), Power BI, Python, Pandas, Numpy, Seaborn, Matplotlib
+            Skilled in Excel, SQL (PostgreSQL), Power BI, Python, Pandas, Numpy,
+            Seaborn, Matplotlib
           </p>
 
           {/* Animated Chart Graphics Background */}
@@ -49,7 +60,7 @@ const Hero = () => {
                     className="mx-1 rounded-t-md"
                     style={{
                       width: 8,
-                      backgroundColor: j % 2 === 0 ? '#00B5D8' : '#FFD700',
+                      backgroundColor: j % 2 === 0 ? "#00B5D8" : "#FFD700",
                       height: 10,
                     }}
                     animate={{
@@ -58,13 +69,13 @@ const Hero = () => {
                     transition={{
                       duration: Math.random() * 4 + 3,
                       repeat: Infinity,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                   />
                 ))}
               </motion.div>
             ))}
-            
+
             {/* Line Charts */}
             {[...Array(3)].map((_, i) => (
               <motion.div
@@ -79,22 +90,26 @@ const Hero = () => {
               >
                 <svg width="100%" height="100%" viewBox="0 0 100 40">
                   <motion.path
-                    d={`M 0,${20 + Math.random() * 10} Q 25,${Math.random() * 30} 50,${Math.random() * 20 + 10} T 100,${Math.random() * 20 + 10}`}
+                    d={`M 0,${20 + Math.random() * 10} Q 25,${
+                      Math.random() * 30
+                    } 50,${Math.random() * 20 + 10} T 100,${
+                      Math.random() * 20 + 10
+                    }`}
                     fill="none"
-                    stroke={i % 2 === 0 ? '#00B5D8' : '#FFD700'}
+                    stroke={i % 2 === 0 ? "#00B5D8" : "#FFD700"}
                     strokeWidth="2"
                     initial={{ pathLength: 0 }}
                     animate={{ pathLength: [0, 1, 0] }}
                     transition={{
                       duration: Math.random() * 5 + 5,
                       repeat: Infinity,
-                      ease: "easeInOut"
+                      ease: "easeInOut",
                     }}
                   />
                 </svg>
               </motion.div>
             ))}
-            
+
             {/* Scatter Points */}
             {[...Array(15)].map((_, i) => (
               <motion.div
@@ -103,7 +118,12 @@ const Hero = () => {
                 style={{
                   width: Math.random() * 6 + 3,
                   height: Math.random() * 6 + 3,
-                  backgroundColor: i % 3 === 0 ? '#00B5D8' : (i % 3 === 1 ? '#FFD700' : '#FF6B6B'),
+                  backgroundColor:
+                    i % 3 === 0
+                      ? "#00B5D8"
+                      : i % 3 === 1
+                      ? "#FFD700"
+                      : "#FF6B6B",
                   left: `${Math.random() * 90 + 5}%`,
                   top: `${Math.random() * 90 + 5}%`,
                 }}
@@ -119,52 +139,64 @@ const Hero = () => {
               />
             ))}
           </div>
-          
+
           {/* Buttons & Counter */}
           <div className="flex flex-wrap justify-center gap-4 z-10">
             <motion.a
-              href="/resume.pdf"
+              href="/Resume/AlokkumarCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-3 bg-highlight hover:bg-highlight-light font-semibold text-primary rounded-lg shadow-lg border border-highlight/30 transition-all duration-300 cursor-pointer flex items-center gap-2 text-sm sm:text-base"
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
+              className="relative z-50 px-5 py-2.5 bg-highlight hover:bg-highlight-light font-medium text-primary rounded-md shadow-md border border-highlight/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-2 text-sm"
+              whileHover={{
+                scale: 1.05,
+                boxShadow:
+                  "0 8px 20px -4px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              }}
               whileTap={{ scale: 0.95 }}
             >
-              <FileText size={20} />
+              <FileText size={16} />
               View My Resume
             </motion.a>
-            <motion.a
-              href="https://www.linkedin.com/in/your-linkedin-profile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-3 bg-accent hover:bg-accent-light font-semibold text-white rounded-lg shadow-lg border border-accent/30 transition-all duration-300 cursor-pointer flex items-center gap-2 text-sm sm:text-base"
-              whileHover={{ scale: 1.05, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
+
+            <motion.button
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="relative z-50 px-5 py-2.5 bg-accent hover:bg-accent-light font-medium text-white rounded-md shadow-md border border-accent/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-2 text-sm"
+              whileHover={{
+                scale: 1.05,
+                boxShadow:
+                  "0 8px 20px -4px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+              }}
               whileTap={{ scale: 0.95 }}
             >
-              <Briefcase size={20} />
+              <Briefcase size={16} />
               Hire Me
-            </motion.a>
+            </motion.button>
+
             <div className="w-full sm:w-auto mt-4 sm:mt-0">
               <CounterUp end={230} />
             </div>
-            
+
             {/* Data Visualization Icons */}
             <div className="flex gap-4 mt-6 justify-center">
-              <motion.div 
+              <motion.div
                 className="p-3 bg-primary-dark rounded-full border border-accent/30"
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
               >
                 <BarChart size={24} className="text-accent" />
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="p-3 bg-primary-dark rounded-full border border-highlight/30"
                 whileHover={{ scale: 1.1, rotate: -10 }}
                 whileTap={{ scale: 0.9 }}
               >
                 <LineChart size={24} className="text-highlight" />
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="p-3 bg-primary-dark rounded-full border border-accent/30"
                 whileHover={{ scale: 1.1, rotate: 10 }}
                 whileTap={{ scale: 0.9 }}
