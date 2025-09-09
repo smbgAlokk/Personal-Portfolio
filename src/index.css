@@ -23,9 +23,9 @@
   }
 
   .light {
-    --color-bg: theme("colors.light-primary.DEFAULT");
-    --color-text: theme("colors.light-text.DEFAULT");
-    --color-card-bg: theme("colors.light-primary.light");
+    --color-bg: theme("colors.white");
+    --color-text: theme("colors.gray.900");
+    --color-card-bg: theme("colors.gray.100");
     --color-primary: theme("colors.primary.DEFAULT");
     --color-secondary: theme("colors.gray.400");
   }
@@ -33,7 +33,7 @@
   html {
     transition: color 0.3s ease, background-color 0.3s ease;
   }
-  
+
   body {
     font-family: theme("fontFamily.sans");
     background-color: var(--color-bg);
@@ -43,10 +43,11 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   /* Theme transition classes */
   .theme-transition * {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 300ms;
   }
