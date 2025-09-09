@@ -5,6 +5,28 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+  --background: #0f172a;
+  --text: #f8fafc;
+  --primary: #1e293b;
+  --primary-light: #334155;
+  --primary-dark: #0f172a;
+  --secondary: #475569;
+  --accent: #38bdf8;
+  --highlight: #0ea5e9;
+  --card-bg: #1e293b;
+  
+  /* Light mode variables */
+  --light-background: #f1f5f9;
+  --light-text: #0f172a;
+  --light-primary: #e2e8f0;
+  --light-primary-dark: #cbd5e1;
+  --light-secondary: #94a3b8;
+  --light-accent: #0284c7;
+  --light-highlight: #0ea5e9;
+  --light-card-bg: #ffffff;
+}
+
 @layer base {
   :root {
     --color-bg: theme("colors.dark.DEFAULT");
@@ -42,6 +64,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /* Light mode styles */
+  html.light body {
+    background-color: var(--light-background);
+    color: var(--light-text);
   }
 
   /* Theme transition classes */
@@ -123,6 +152,69 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dashboard-inspired components */
+  .dashboard-card {
+    background-color: var(--primary-dark);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .dashboard-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+  }
+  
+  .dashboard-stat-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  
+  .dashboard-stat-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin-top: 0.25rem;
+  }
+  
+  /* Progress bar */
+  .progress-bar {
+    height: 0.5rem;
+    width: 100%;
+    background-color: var(--primary);
+    border-radius: 9999px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, var(--accent), var(--highlight));
+    border-radius: 9999px;
+  }
+  
+  /* Card flip animations */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
   }
   /* Close @layer components block */
 }
