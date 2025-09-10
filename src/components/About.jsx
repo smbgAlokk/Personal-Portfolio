@@ -63,7 +63,7 @@ const About = () => {
                       📊 Data Analytics
                     </h3>
                     <p className="text-xs xs:text-sm text-gray-400">
-                      SQL, Excel, Power BI
+                      SQL, Python, Excel, Power BI
                     </p>
                   </div>
                 </motion.div>
