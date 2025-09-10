@@ -39,7 +39,7 @@ const Hero = () => {
           <p className="max-w-full sm:max-w-xl md:max-w-2xl mx-auto text-gray-300 mb-2 sm:mb-3 md:mb-4 text-xs xs:text-sm sm:text-base md:text-lg leading-relaxed">
             My Skills
           </p>
-          
+
           {/* Floating Skill Icons */}
           <SkillIcons />
 
@@ -148,37 +148,6 @@ const Hero = () => {
             <div className="w-full sm:w-auto mt-3 sm:mt-4">
               <CounterUp end={230} />
             </div>
-
-            {/* Data Visualization Icons */}
-            {/* <div className="flex gap-2 xs:gap-3 sm:gap-4 mt-4 sm:mt-5 md:mt-6 justify-center">
-              <motion.div
-                className="p-2 xs:p-2.5 sm:p-3 bg-primary-dark rounded-full border border-accent/30"
-                whileHover={{ scale: 1.1, rotate: 10 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <BarChart size={18} className="text-accent xs:hidden" />
-                <BarChart size={20} className="text-accent hidden xs:block sm:hidden" />
-                <BarChart size={24} className="text-accent hidden sm:block" />
-              </motion.div>
-              <motion.div
-                className="p-2 xs:p-2.5 sm:p-3 bg-primary-dark rounded-full border border-highlight/30"
-                whileHover={{ scale: 1.1, rotate: -10 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <LineChart size={18} className="text-highlight xs:hidden" />
-                <LineChart size={20} className="text-highlight hidden xs:block sm:hidden" />
-                <LineChart size={24} className="text-highlight hidden sm:block" />
-              </motion.div>
-              <motion.div
-                className="p-2 xs:p-2.5 sm:p-3 bg-primary-dark rounded-full border border-accent/30"
-                whileHover={{ scale: 1.1, rotate: 10 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <PieChart size={18} className="text-accent xs:hidden" />
-                <PieChart size={20} className="text-accent hidden xs:block sm:hidden" />
-                <PieChart size={24} className="text-accent hidden sm:block" />
-              </motion.div>
-            </div> */}
           </div>
         </motion.div>
       </div>
@@ -189,9 +158,9 @@ const Hero = () => {
         spy={true}
         smooth={true}
         offset={-64}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer animate-bounce"
       >
-        <ChevronDown className="text-accent" size={32} />
+        <ChevronDown className="text-accent mx-auto" size={32} />
       </Link>
     </section>
   );
