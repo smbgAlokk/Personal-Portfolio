@@ -143,14 +143,6 @@ const About = () => {
                   <span className="text-xs text-gray-400">Pie Charts</span>
                 </motion.div>
               </div>
-
-              <p className="text-gray-300 text-lg leading-relaxed">
-                When I'm not analyzing data, you'll find me exploring new data
-                visualization techniques, learning about big data technologies,
-                or participating in data science competitions. I believe in
-                continuous learning and staying updated with the latest industry
-                trends in data analytics and engineering.
-              </p>
               <a
                 href="https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing"
                 target="_blank"
