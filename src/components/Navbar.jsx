@@ -28,10 +28,10 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-2 w-full z-50 transition-all duration-300 rounded-full ${
-        isScrolled 
-          ? isDarkMode 
-            ? "bg-primary/80 backdrop-blur-sm" 
-            : "bg-light-primary/80 backdrop-blur-sm" 
+        isScrolled
+          ? isDarkMode
+            ? "bg-primary/80 backdrop-blur-sm"
+            : "bg-light-primary/80 backdrop-blur-sm"
           : "bg-transparent"
       } dark:text-white light:text-light-text`}
     >
@@ -81,9 +81,14 @@ const Navbar = () => {
             >
               <Mail size={20} />
             </a>
-            <button 
+            <button
               className="bg-highlight/90 hover:bg-highlight text-primary px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300"
-              onClick={() => window.open('/Resume/AlokkumarCV.pdf', '_blank')}
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing",
+                  "_blank"
+                )
+              }
             >
               Resume
             </button>
