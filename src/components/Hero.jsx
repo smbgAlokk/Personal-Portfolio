@@ -158,9 +158,9 @@ const Hero = () => {
         spy={true}
         smooth={true}
         offset={-64}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer animate-bounce"
+        className="absolute bottom-8 inset-x-0 flex justify-center cursor-pointer animate-bounce"
       >
-        <ChevronDown className="text-accent mx-auto" size={32} />
+        <ChevronDown className="text-accent" size={32} />
       </Link>
     </section>
   );
