@@ -152,7 +152,7 @@ const About = () => {
                 trends in data analytics and engineering.
               </p>
               <a
-                href="/public/resume/AlokkumarCV.pdf"
+                href="https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 inline-flex items-center px-4 py-2 mt-4 bg-primary-dark rounded-lg border border-accent/20 text-accent hover:text-highlight cursor-pointer transition-colors duration-300"
