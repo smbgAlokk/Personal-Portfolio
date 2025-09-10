@@ -23,7 +23,7 @@ const CodingMusicJourney = () => {
               className="text-2xl font-semibold"
             >
               LeetCode Questions Solved:
-              <span className="text-primary font-bold block text-3xl mt-2">
+              <span className="text-yellow-400 font-bold block text-3xl mt-2">
                 230+ ✅
               </span>
             </a>
@@ -69,7 +69,7 @@ const CodingMusicJourney = () => {
               href="https://www.instagram.com/unplugged_alok/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 border border-primary text-primary hover:bg-gray-400 rounded-lg transition"
+              className="px-6 py-3 border border-primary text-yellow-100 hover:bg-gray-400 rounded-lg transition"
             >
               🎸 Follow Me on Instagram
             </a>
