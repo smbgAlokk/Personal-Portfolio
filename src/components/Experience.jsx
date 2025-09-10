@@ -31,12 +31,12 @@ const Experience = () => {
                     className="flex items-center  text-[.8rem] font-thin text-gray-400 hover:text-white"
                   >
                     <ExternalLink size={18} className="mr-2" />
-                    <span className="text-white  hover:text-red-400">
+                    <span className="text-white  hover:text-amber-300">
                       Intership Certificate
                     </span>
                   </a>
                 </h3>
-                <p className="text-primary">Pug Esports Academy, Delhi</p>
+                <p className="text-accent">Pug Esports pvt., Delhi</p>
                 <p className="text-gray-400">April 2024 - July 2024</p>
               </div>
               <ul className="space-y-2 text-gray-300">
