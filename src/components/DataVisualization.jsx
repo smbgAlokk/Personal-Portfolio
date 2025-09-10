@@ -216,7 +216,7 @@ const DataVisualization = () => {
   }, [activeChart, currentIndex]);
   
   return (
-    <section id="visualization" className="bg-gradient-to-b from-primary-light to-primary dark:bg-gradient-to-b dark:from-primary-light dark:to-primary light:bg-gradient-to-b light:from-light-primary-dark light:to-light-primary text-white dark:text-white light:text-light-text py-10 sm:py-12 md:py-16">
+    <section id="visualization" className="bg-gradient-to-b from-primary-light to-primary dark:bg-gradient-to-b dark:from-primary-light dark:to-primary light:bg-gradient-to-b light:from-light-primary-dark light:to-light-primary text-white dark:text-white light:text-light-text py-10 sm:py-12 md:py-16 data-pattern-bg">
       <div className="section-container px-3 sm:px-4 md:px-6 max-w-6xl mx-auto" ref={containerRef}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

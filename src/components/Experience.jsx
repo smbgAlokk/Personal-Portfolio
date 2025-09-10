@@ -5,7 +5,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="bg-gradient-to-b from-dark to-dark-lighter text-white"
+      className="bg-gradient-to-b from-dark to-dark-lighter text-white data-pattern-bg"
     >
       <div className="section-container">
         <motion.div

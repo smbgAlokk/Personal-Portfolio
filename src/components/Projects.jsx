@@ -4,6 +4,9 @@ import { useState } from "react";
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState(0);
+  
+  // Section class with data pattern background
+  const sectionClass = "bg-primary py-10 sm:py-12 md:py-16 data-pattern-bg";
   const projects = [
     {
       title: "Diwali Sales Data Analysis",
@@ -66,7 +69,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-gradient-to-b from-primary to-primary-light text-white py-10 sm:py-12 md:py-16"
+      className="bg-gradient-to-b from-primary to-primary-light text-white py-10 sm:py-12 md:py-16 data-pattern-bg"
     >
       <div className="section-container px-3 sm:px-4 md:px-6 max-w-6xl mx-auto">
         <motion.div

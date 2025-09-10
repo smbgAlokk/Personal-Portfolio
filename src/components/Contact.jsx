@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Github, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-gradient-to-b from-primary to-primary-light">
+    <section id="contact" className="bg-gradient-to-b from-primary to-primary-light data-pattern-bg">
       <div className="section-container">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

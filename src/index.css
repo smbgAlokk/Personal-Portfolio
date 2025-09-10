@@ -273,3 +273,64 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Data-inspired background pattern */
+.data-pattern-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.data-pattern-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 0;
+}
+
+.data-pattern-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 3px, transparent 3px);
+  background-size: 40px 40px, 80px 80px;
+  background-position: 0 0, 20px 20px;
+  z-index: 0;
+}
+
+/* Dark mode adjustments */
+.dark .data-pattern-bg::before {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.dark .data-pattern-bg::after {
+  background-image: 
+    radial-gradient(circle, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255, 255, 255, 0.05) 3px, transparent 3px);
+}
+
+/* Light mode adjustments */
+.light .data-pattern-bg::before {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+.light .data-pattern-bg::after {
+  background-image: 
+    radial-gradient(circle, rgba(0, 0, 0, 0.07) 1px, transparent 1px),
+    radial-gradient(circle, rgba(0, 0, 0, 0.05) 3px, transparent 3px);
+}

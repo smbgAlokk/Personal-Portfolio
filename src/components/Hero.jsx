@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-scroll";
 import CounterUp from "./CounterUp";
+import SkillIcons from "./SkillIcons";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
@@ -35,10 +36,12 @@ const Hero = () => {
               Transforming Data into Insights & Action
             </span>
           </p>
-          <p className="max-w-full sm:max-w-xl md:max-w-2xl mx-auto text-gray-300 mb-4 sm:mb-5 md:mb-6 text-xs xs:text-sm sm:text-base md:text-lg leading-relaxed">
-            Skilled in Excel, SQL (PostgreSQL), Power BI, Python, Pandas, Numpy,
-            Seaborn, Matplotlib
+          <p className="max-w-full sm:max-w-xl md:max-w-2xl mx-auto text-gray-300 mb-2 sm:mb-3 md:mb-4 text-xs xs:text-sm sm:text-base md:text-lg leading-relaxed">
+            My Skills
           </p>
+          
+          {/* Floating Skill Icons */}
+          <SkillIcons />
 
           {/* Animated Chart Graphics Background */}
           <div className="absolute inset-0 z-0 opacity-20">

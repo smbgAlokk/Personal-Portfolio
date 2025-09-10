@@ -13,7 +13,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-primary-light dark:bg-primary-light light:bg-light-primary py-10 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6"
+      className="bg-primary-light dark:bg-primary-light light:bg-light-primary py-10 sm:py-12 md:py-16 px-3 sm:px-4 md:px-6 data-pattern-bg"
     >
       <div className="max-w-6xl mx-auto">
         <motion.div
