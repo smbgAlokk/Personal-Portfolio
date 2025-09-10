@@ -225,10 +225,18 @@
   
   .backface-hidden {
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari support */
   }
   
   .rotate-y-180 {
     transform: rotateY(180deg);
+  }
+  
+  /* Responsive card styles */
+  @media (max-width: 640px) {
+    .preserve-3d {
+      min-height: 400px;
+    }
   }
   /* Close @layer components block */
 }

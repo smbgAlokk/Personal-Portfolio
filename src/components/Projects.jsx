@@ -87,11 +87,11 @@ const Projects = () => {
           <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-center">
             Projects <span className="text-accent">(Data Focus)</span>
           </h2>
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="bg-primary-light rounded-lg overflow-hidden border border-accent/20 min-h-[350px] sm:h-[450px] perspective-1000"
+                className="bg-primary-light rounded-lg overflow-hidden border border-accent/20 min-h-[400px] h-auto md:h-[450px] perspective-1000"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -105,7 +105,7 @@ const Projects = () => {
                   transition={{ duration: 0.6 }}
                 >
                   {/* Front of card */}
-                  <div className="absolute w-full h-full backface-hidden">
+                  <div className="absolute w-full h-full backface-hidden overflow-auto">
                     <div className="relative h-48 overflow-hidden">
                       <img
                         src={project.image}
@@ -133,16 +133,16 @@ const Projects = () => {
                           </span>
                         ))}
                       </div>
-                      <div className="flex space-x-4">
+                      <div className="flex space-x-4 mt-4">
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center text-accent hover:text-highlight"
+                          className="flex items-center text-accent hover:text-highlight px-4 py-2 bg-primary-dark/30 rounded-md w-auto"
                           onClick={(e) => e.stopPropagation()}
                         >
-                          <Github size={20} className="mr-1" />
-                          <span>Code</span>
+                          <Github size={18} className="mr-2" />
+                          <span className="text-sm font-medium">Code</span>
                         </a>
                       </div>
                       <div className="mt-4 text-center">
@@ -154,7 +154,7 @@ const Projects = () => {
                   </div>
 
                   {/* Back of card */}
-                  <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-primary-light p-6 flex flex-col">
+                  <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-primary-light p-4 sm:p-6 flex flex-col overflow-auto">
                     <div className="flex items-center mb-4">
                       {project.icon}
                       <h3 className="text-xl font-semibold text-accent ml-2">
@@ -196,11 +196,11 @@ const Projects = () => {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-sm text-accent hover:text-highlight transition-colors"
+                        className="flex items-center px-4 py-2 bg-primary-dark/30 rounded-md text-accent hover:text-highlight transition-colors w-auto"
                         onClick={(e) => e.stopPropagation()}
                       >
-                        <Github size={16} />
-                        View Code
+                        <Github size={18} className="mr-2" />
+                        <span className="text-sm font-medium">View Code</span>
                       </a>
                     </div>
 
