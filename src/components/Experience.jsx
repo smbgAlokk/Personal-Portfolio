@@ -36,14 +36,14 @@ const Experience = () => {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
+                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
                     Supported Agile sprints, ensuring efficient data handling
                     and reporting
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
+                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
                     Collaborated with senior developers on debugging,
                     optimization, and documentation
@@ -77,24 +77,24 @@ const Experience = () => {
               </div>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-start">
-                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
+                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>Developed responsive UIs using React.js & Next.js</span>
                 </li>
                 <li className="flex items-start">
-                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
+                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
                     Integrated REST APIs, improving data-fetching speed by 25%
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
+                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
                     Optimized rendering performance using React.memo and
                     useCallback
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-primary" />
+                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
                     Used Git for version control and collaborated with backend
                     teams
