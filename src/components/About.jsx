@@ -152,10 +152,10 @@ const About = () => {
                 trends in data analytics and engineering.
               </p>
               <a
-                href="/Resume/AlokkumarCV.pdf"
+                href="/public/resume/AlokkumarCV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2 mt-4 bg-primary-dark rounded-lg border border-accent/20 text-accent hover:text-highlight cursor-pointer transition-colors duration-300"
+                className="relative z-10 inline-flex items-center px-4 py-2 mt-4 bg-primary-dark rounded-lg border border-accent/20 text-accent hover:text-highlight cursor-pointer transition-colors duration-300"
               >
                 <ExternalLink size={18} className="mr-2" />
                 <span className="font-medium">Download Resume</span>
