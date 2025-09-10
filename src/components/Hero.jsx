@@ -142,50 +142,6 @@ const Hero = () => {
 
           {/* Buttons & Counter */}
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 z-10">
-            <motion.a
-              href="https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative z-50 px-3 py-1 sm:px-4 sm:py-1.5 
-               bg-highlight hover:bg-highlight-light 
-               text-primary font-medium rounded-md 
-               shadow border border-highlight/30 
-               transition-all duration-300 cursor-pointer 
-               inline-flex items-center gap-1 text-sm"
-              whileHover={{
-                scale: 1.05,
-                boxShadow:
-                  "0 6px 14px -2px rgba(0,0,0,0.15), 0 2px 4px -2px rgba(0,0,0,0.05)",
-              }}
-              whileTap={{ scale: 0.97 }}
-            >
-              <FileText size={18} />
-              View Resume
-            </motion.a>
-
-            <motion.button
-              onClick={() => {
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-              className="relative z-50 px-3 py-1 sm:px-4 sm:py-1.5 
-               bg-accent hover:bg-accent-light 
-               text-white font-medium rounded-md 
-               shadow border border-accent/30 
-               transition-all duration-300 cursor-pointer 
-               inline-flex items-center gap-1 text-sm"
-              whileHover={{
-                scale: 1.05,
-                boxShadow:
-                  "0 6px 14px -2px rgba(0,0,0,0.15), 0 2px 4px -2px rgba(0,0,0,0.05)",
-              }}
-              whileTap={{ scale: 0.97 }}
-            >
-              <Briefcase size={18} />
-              Hire Me
-            </motion.button>
-
             <div className="w-full sm:w-auto mt-3 sm:mt-4">
               <CounterUp end={230} />
             </div>
