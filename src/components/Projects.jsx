@@ -96,16 +96,16 @@ const Projects = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                onClick={() => toggleFlip(index)}
                 style={{ perspective: "1000px" }}
               >
                 <motion.div
                   className="relative w-full h-full transition-all duration-500 preserve-3d"
                   animate={{ rotateY: flippedCards[index] ? 180 : 0 }}
                   transition={{ duration: 0.6 }}
+                  onClick={() => toggleFlip(index)} // flip only when card itself clicked
                 >
                   {/* Front of card */}
-                  <div className="absolute w-full h-full backface-hidden">
+                  <div className="absolute w-full h-full backface-hidden pointer-events-auto">
                     <div className="relative h-48 overflow-hidden">
                       <img
                         src={project.image}
@@ -133,22 +133,24 @@ const Projects = () => {
                           </span>
                         ))}
                       </div>
-                      <div className="flex space-x-4 relative z-10">
+
+                      {/* ✅ Clickable GitHub button */}
+                      <div className="flex space-x-4 relative z-50 pointer-events-auto">
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center px-4 py-2 bg-primary-dark/30 rounded-md text-accent hover:text-highlight transition-colors w-auto"
                           onClick={(e) => {
-                            e.preventDefault();
-                            e.stopPropagation(); // prevent card flip
-                            window.open(project.github, '_blank', 'noopener,noreferrer');
+                            e.stopPropagation();
+                            e.nativeEvent.stopImmediatePropagation();
                           }}
+                          className="inline-flex items-center px-4 py-2 bg-primary-dark/30 rounded-md text-accent hover:text-highlight transition-colors duration-300 cursor-pointer"
                         >
                           <Github size={18} className="mr-2" />
                           <span className="text-sm font-medium">Code</span>
                         </a>
                       </div>
+
                       <div className="mt-4 text-center">
                         <p className="text-xs text-gray-400">
                           Click to see details
@@ -158,7 +160,7 @@ const Projects = () => {
                   </div>
 
                   {/* Back of card */}
-                  <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-primary-light p-4 sm:p-6 flex flex-col">
+                  <div className="absolute w-full h-full backface-hidden rotate-y-180 bg-primary-light p-4 sm:p-6 flex flex-col pointer-events-auto">
                     <div className="flex items-center mb-4">
                       {project.icon}
                       <h3 className="text-xl font-semibold text-accent ml-2">
@@ -195,21 +197,27 @@ const Projects = () => {
                       </div>
                     </div>
 
-                    <div className="mt-auto flex gap-4 relative z-10">
+                    {/* ✅ Clickable GitHub button on back */}
+                    <div className="mt-auto flex gap-4 relative z-50 pointer-events-auto">
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center px-4 py-2 bg-primary-dark/30 rounded-md text-accent hover:text-highlight transition-colors w-auto"
                         onClick={(e) => {
-                          e.preventDefault();
-                          e.stopPropagation(); // prevent card flip
-                          window.open(project.github, '_blank', 'noopener,noreferrer');
+                          e.stopPropagation();
+                          e.nativeEvent.stopImmediatePropagation();
                         }}
+                        className="flex items-center px-4 py-2 bg-primary-dark/30 rounded-md text-accent hover:text-highlight transition-colors cursor-pointer"
                       >
                         <Github size={18} className="mr-2" />
                         <span className="text-sm font-medium">View Code</span>
                       </a>
+                    </div>
+
+                    <div className="mt-4 text-center">
+                      <p className="text-xs text-gray-400">
+                        Click to flip back
+                      </p>
                     </div>
                   </div>
                 </motion.div>
