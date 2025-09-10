@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         "Analyzed customer purchase behavior and sales trends. Created interactive visualizations to identify top products and customer segments.",
       image: "/Images/Diwali_Analysis.png",
-      github: "https://github.com/smbgAlokk/diwali-sales-analysis",
+      github: "https://github.com/smbgAlokk/Diwali-Sales-Analysis",
       tech: ["Python", "Pandas", "Numpy", "Seaborn", "Matplotlib"],
       icon: <BarChart className="text-accent" size={24} />,
       insights: [
@@ -91,7 +91,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                className="bg-primary-light rounded-lg overflow-hidden border border-accent/20 h-[350px] xs:h-[400px] sm:h-[450px] perspective-1000"
+                className="bg-primary-light rounded-lg overflow-hidden border border-accent/20 min-h-[350px] sm:h-[450px] perspective-1000"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
