@@ -146,17 +146,21 @@ const Hero = () => {
               href="https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative z-50 px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 bg-highlight hover:bg-highlight-light font-medium text-primary rounded-md shadow-md border border-highlight/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base"
+              className="relative z-50 px-3 py-1 sm:px-4 sm:py-1.5 
+               bg-highlight hover:bg-highlight-light 
+               text-primary font-medium rounded-md 
+               shadow border border-highlight/30 
+               transition-all duration-300 cursor-pointer 
+               inline-flex items-center gap-1 text-sm"
               whileHover={{
                 scale: 1.05,
                 boxShadow:
-                  "0 8px 20px -4px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                  "0 6px 14px -2px rgba(0,0,0,0.15), 0 2px 4px -2px rgba(0,0,0,0.05)",
               }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.97 }}
             >
-              <FileText size={16} className="hidden sm:block" />
-              <FileText size={14} className="sm:hidden" />
-              View My Resume
+              <FileText size={18} />
+              View Resume
             </motion.a>
 
             <motion.button
@@ -165,16 +169,20 @@ const Hero = () => {
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
-              className="relative z-50 px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 bg-accent hover:bg-accent-light font-medium text-white rounded-md shadow-md border border-accent/30 transition-all duration-300 cursor-pointer inline-flex items-center gap-1 sm:gap-2 text-xs sm:text-sm md:text-base"
+              className="relative z-50 px-3 py-1 sm:px-4 sm:py-1.5 
+               bg-accent hover:bg-accent-light 
+               text-white font-medium rounded-md 
+               shadow border border-accent/30 
+               transition-all duration-300 cursor-pointer 
+               inline-flex items-center gap-1 text-sm"
               whileHover={{
                 scale: 1.05,
                 boxShadow:
-                  "0 8px 20px -4px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                  "0 6px 14px -2px rgba(0,0,0,0.15), 0 2px 4px -2px rgba(0,0,0,0.05)",
               }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.97 }}
             >
-              <Briefcase size={16} className="hidden sm:block" />
-              <Briefcase size={14} className="sm:hidden" />
+              <Briefcase size={18} />
               Hire Me
             </motion.button>
 
@@ -183,7 +191,7 @@ const Hero = () => {
             </div>
 
             {/* Data Visualization Icons */}
-            <div className="flex gap-2 xs:gap-3 sm:gap-4 mt-4 sm:mt-5 md:mt-6 justify-center">
+            {/* <div className="flex gap-2 xs:gap-3 sm:gap-4 mt-4 sm:mt-5 md:mt-6 justify-center">
               <motion.div
                 className="p-2 xs:p-2.5 sm:p-3 bg-primary-dark rounded-full border border-accent/30"
                 whileHover={{ scale: 1.1, rotate: 10 }}
@@ -211,7 +219,7 @@ const Hero = () => {
                 <PieChart size={20} className="text-accent hidden xs:block sm:hidden" />
                 <PieChart size={24} className="text-accent hidden sm:block" />
               </motion.div>
-            </div>
+            </div> */}
           </div>
         </motion.div>
       </div>
