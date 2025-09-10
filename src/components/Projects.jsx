@@ -133,13 +133,15 @@ const Projects = () => {
                           </span>
                         ))}
                       </div>
-                      <div className="flex space-x-4">
+                      <div className="flex space-x-4 relative z-10">
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center text-accent hover:text-highlight"
-                          onClick={(e) => e.stopPropagation()}
+                          className="flex items-center text-accent hover:text-highlight transition-colors"
+                          onClick={(e) => {
+                            e.stopPropagation(); // prevent card flip
+                          }}
                         >
                           <Github size={20} className="mr-1" />
                           <span>Code</span>
@@ -191,23 +193,19 @@ const Projects = () => {
                       </div>
                     </div>
 
-                    <div className="mt-auto flex gap-4">
+                    <div className="mt-auto flex gap-4 relative z-10">
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1 text-sm text-accent hover:text-highlight transition-colors"
-                        onClick={(e) => e.stopPropagation()}
+                        onClick={(e) => {
+                          e.stopPropagation(); // prevent card flip
+                        }}
                       >
                         <Github size={16} />
                         View Code
                       </a>
-                    </div>
-
-                    <div className="mt-4 text-center">
-                      <p className="text-xs text-gray-400">
-                        Click to flip back
-                      </p>
                     </div>
                   </div>
                 </motion.div>
