@@ -7,6 +7,22 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Online Book Store Analysis",
+      description:
+        "📚 SQL Bookstore Data Analysis – Designed a bookstore database (Books, Customers, Orders) and wrote advanced SQL queries to extract insights on sales trends, customer behavior, revenue, and inventory management.",
+      image: "/Images/Book_Store.png",
+      github: "https://github.com/smbgAlokk/Online-Book-Store",
+      tech: ["PostgreSQL", "SQL", "Data Modeling"],
+      icon: <Database className="text-accent" size={24} />,
+      insights: [
+        "Designed relational database with Books, Customers & Orders tables",
+        "Wrote basic & advanced SQL queries to analyze sales, customers & inventory",
+        "Extracted insights on revenue trends, top customers, and high-demand genres",
+        "Demonstrated strong skills in SQL, query optimization, and business analytics",
+      ],
+      tools: ["React", "Node.js", "MongoDB", "Express"],
+    },
+    {
       title: "Diwali Sales Data Analysis",
       description:
         "Analyzed customer purchase behavior and sales trends. Created interactive visualizations to identify top products and customer segments.",
