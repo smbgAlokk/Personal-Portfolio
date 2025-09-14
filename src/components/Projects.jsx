@@ -125,7 +125,7 @@ const Projects = () => {
                       <h3 className="text-xl font-semibold text-accent mb-2">
                         {project.title}
                       </h3>
-                      <p className="text-gray-300 mb-4">
+                      <p className="text-gray-300 mb-4 hidden md:block">
                         {project.description}
                       </p>
 
