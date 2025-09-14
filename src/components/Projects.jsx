@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, BarChart, FileSpreadsheet, Database } from "lucide-react";
+import { Github, BarChart, FileSpreadsheet, Database, ExternalLink } from "lucide-react";
 import { useState } from "react";
 
 const Projects = () => {
@@ -58,6 +58,7 @@ const Projects = () => {
         "A full-stack platform showing versatility in web development. Demonstrates ability to build interactive data-driven applications.",
       image: "/Images/MoonStudio.png",
       github: "https://github.com/smbgAlokk/moon-production",
+      liveUrl: "https://moon-production.vercel.app/",
       tech: ["React", "Node.js", "MongoDB", "Express"],
       icon: <Database className="text-accent" size={24} />,
       insights: [
@@ -152,6 +153,18 @@ const Projects = () => {
                           <Github size={18} className="mr-2" />
                           <span className="text-sm font-medium">Code</span>
                         </a>
+                        {project.liveUrl && (
+                          <a
+                            href={project.liveUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center px-4 py-2 bg-primary-dark/30 rounded-md text-accent hover:text-highlight transition-colors duration-300 cursor-pointer"
+                          >
+                            <ExternalLink size={18} className="mr-2" />
+                            <span className="text-sm font-medium">View</span>
+                          </a>
+                        )}
                       </div>
 
                       <p className="mt-4 text-xs text-gray-400 text-center">
@@ -210,6 +223,18 @@ const Projects = () => {
                         <Github size={18} className="mr-2" />
                         <span className="text-sm font-medium">View Code</span>
                       </a>
+                      {project.liveUrl && (
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex items-center px-4 py-2 bg-primary-dark/30 rounded-md text-accent hover:text-highlight transition-colors duration-300 cursor-pointer"
+                        >
+                          <ExternalLink size={18} className="mr-2" />
+                          <span className="text-sm font-medium">View Live</span>
+                        </a>
+                      )}
                     </div>
 
                     <p className="mt-4 text-xs text-gray-400 text-center">
