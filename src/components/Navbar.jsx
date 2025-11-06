@@ -85,7 +85,7 @@ const Navbar = () => {
               className="bg-highlight/90 hover:bg-highlight text-primary px-3 py-1 rounded-full text-sm font-medium transition-colors duration-300"
               onClick={() =>
                 window.open(
-                  "https://drive.google.com/file/d/1WnFdcZ8-8obNniTifDTjLmYwFiyDOv4w/view?usp=sharing",
+                  "https://drive.google.com/file/d/1683w3U5c-8UCTBgINcwLEK4322Pb3jP0/view?usp=sharing",
                   "_blank"
                 )
               }
