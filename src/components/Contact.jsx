@@ -22,7 +22,7 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto">
             <p className="text-center text-gray-300 mb-12">
               Open to{" "}
-              <span className="text-accent font-semibold">Senior Software Developer</span>{" "}
+              <span className="text-accent font-semibold">Software Developer</span>{" "}
               and{" "}
               <span className="text-highlight font-semibold">
                 Backend Architect
