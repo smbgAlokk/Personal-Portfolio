@@ -142,7 +142,7 @@ const About = () => {
                 </motion.div>
               </div>
               <a
-                href="https://drive.google.com/file/d/1683w3U5c-8UCTBgINcwLEK4322Pb3jP0/view?usp=sharing"
+                href="https://drive.google.com/file/d/1JLxrXyTAT96eyc80KVEX2RVjMutNGSul/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 inline-flex items-center px-4 py-2 mt-4 bg-primary-dark rounded-lg border border-accent/20 text-accent hover:text-highlight cursor-pointer transition-colors duration-300"
