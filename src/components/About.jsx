@@ -34,7 +34,7 @@ const About = () => {
               <p className="text-gray-300 text-base xs:text-lg leading-relaxed mb-4 sm:mb-6">
                 I'm a{" "}
                 <span className="text-accent font-semibold">
-                  Senior Software Developer
+                  Software Developer
                 </span>{" "}
                 with expertise in building scalable backend systems and robust
                 APIs. Specialized in JWT authentication, RESTful & GraphQL APIs,
