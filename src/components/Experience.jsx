@@ -31,22 +31,25 @@ const Experience = () => {
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
-                    Assisted in data-driven application development and API
-                    integrations
+                    Architected and developed scalable backend systems using Node.js, Express, and microservices patterns
                   </span>
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
-                    Supported Agile sprints, ensuring efficient data handling
-                    and reporting
+                    Implemented secure authentication systems with JWT, OAuth2, and role-based access control
                   </span>
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
-                    Collaborated with senior developers on debugging,
-                    optimization, and documentation
+                    Designed and optimized RESTful and GraphQL APIs, improving response times by 40% through caching and query optimization
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
+                  <span>
+                    Collaborated on system architecture decisions, database design, and DevOps practices
                   </span>
                 </li>
               </ul>
@@ -78,26 +81,24 @@ const Experience = () => {
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
-                  <span>Developed responsive UIs using React.js & Next.js</span>
+                  <span>Built RESTful APIs using Node.js, Express, and MongoDB for frontend integration</span>
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
-                    Integrated REST APIs, improving data-fetching speed by 25%
+                    Implemented JWT-based authentication and authorization middleware, securing API endpoints
                   </span>
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
-                    Optimized rendering performance using React.memo and
-                    useCallback
+                    Optimized API performance through database indexing, query optimization, and Redis caching
                   </span>
                 </li>
                 <li className="flex items-start">
                   <Briefcase className="w-5 h-5 mr-2 mt-1 text-slate-950" />
                   <span>
-                    Used Git for version control and collaborated with backend
-                    teams
+                    Collaborated with frontend teams on API contracts, error handling, and data validation strategies
                   </span>
                 </li>
               </ul>

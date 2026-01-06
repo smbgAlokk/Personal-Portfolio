@@ -7,7 +7,7 @@ const CodingMusicJourney = () => {
       className="py-16 bg-gradient-to-b from-dark to-dark-lighter text-white"
     >
       <div className="section-container">
-        <h2 className="section-title">My Dual Passion 🚀</h2>
+        <h2 className="section-title">Coding Achievements 🚀</h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 place-items-center">
           {/* LeetCode Progress */}
           <motion.div
@@ -29,7 +29,7 @@ const CodingMusicJourney = () => {
             </a>
           </motion.div>
 
-          {/* YouTube Channel */}
+          {/* API Projects */}
           <motion.div
             className="bg-dark-light p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 w-full max-w-xs text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -37,22 +37,17 @@ const CodingMusicJourney = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="text-2xl font-semibold mb-2 text-gray-300">
-              🎥 My Musical YouTube Channel
+              🔌 APIs Built
             </h3>
             <p className="text-gray-400 mb-4">
-              I create and share my musical performances & compositions.
+              RESTful & GraphQL APIs with JWT authentication and microservices architecture.
             </p>
-            <a
-              href="https://www.youtube.com/channel/UC0ITEPla-cz6U9YXqC-Se_A"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-primary hover:bg-primary-light text-white rounded-lg shadow-lg transition"
-            >
-              🎵 Visit My YouTube
-            </a>
+            <div className="text-yellow-400 font-bold text-3xl">
+              15+ APIs
+            </div>
           </motion.div>
 
-          {/* Instagram Musical Interest */}
+          {/* System Architecture */}
           <motion.div
             className="bg-dark-light p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:scale-105 w-full max-w-xs text-center"
             initial={{ opacity: 0, y: 20 }}
@@ -60,19 +55,14 @@ const CodingMusicJourney = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <h3 className="text-2xl font-semibold mb-2 text-gray-300">
-              🎶 My Musical Passion on Instagram
+              🏗️ Systems Architected
             </h3>
             <p className="text-gray-400 mb-4">
-              Check out my musical journey & performances on Instagram.
+              Scalable backend systems with microservices, caching, and optimized database design.
             </p>
-            <a
-              href="https://www.instagram.com/unplugged_alok/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-primary text-yellow-100 hover:bg-gray-400 rounded-lg transition"
-            >
-              🎸 Follow Me on Instagram
-            </a>
+            <div className="text-yellow-400 font-bold text-3xl">
+              10+ Systems
+            </div>
           </motion.div>
         </div>
       </div>

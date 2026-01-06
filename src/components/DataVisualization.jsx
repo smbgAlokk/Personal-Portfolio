@@ -16,20 +16,20 @@ const DataVisualization = () => {
   
   const visualizationData = [
     {
-      title: "Weekly Data Trends",
-      description: "Analysis of weekly performance metrics showing key patterns",
+      title: "API Response Times",
+      description: "Monitoring API performance metrics and response time patterns",
       type: "bar",
       icon: <BarChart size={24} />
     },
     {
-      title: "Monthly Revenue Growth",
-      description: "Tracking revenue patterns across different business segments",
+      title: "System Load Trends",
+      description: "Tracking server load and resource utilization over time",
       type: "line",
       icon: <LineChart size={24} />
     },
     {
-      title: "Market Segment Distribution",
-      description: "Breakdown of customer segments and their relative proportions",
+      title: "Request Distribution",
+      description: "Breakdown of API requests across different endpoints",
       type: "pie",
       icon: <PieChart size={24} />
     },
@@ -224,7 +224,7 @@ const DataVisualization = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-center">Data Visualization <span className="text-accent">📊</span></h2>
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-center">System Monitoring & Performance <span className="text-accent">📊</span></h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8 md:mb-12">
             {/* Canvas Visualization */}
@@ -301,7 +301,7 @@ const DataVisualization = () => {
             <div className="bg-primary-light dark:bg-primary-light light:bg-light-primary p-6 rounded-xl border border-accent/20">
               <div className="flex items-center mb-4">
                 <Database className="text-accent mr-2" size={20} />
-                <h3 className="text-xl font-semibold text-accent">Visualization Types</h3>
+                <h3 className="text-xl font-semibold text-accent">Monitoring Tools</h3>
               </div>
               
               <div className="grid grid-cols-3 gap-4">
@@ -311,8 +311,8 @@ const DataVisualization = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <BarChart className="text-highlight mb-2" size={32} />
-                  <p className="text-center">Bar Charts</p>
-                  <p className="text-xs text-gray-400 text-center mt-1">Compare values across categories</p>
+                  <p className="text-center">API Metrics</p>
+                  <p className="text-xs text-gray-400 text-center mt-1">Response times & throughput</p>
                 </motion.div>
                 
                 <motion.div 
@@ -321,8 +321,8 @@ const DataVisualization = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <LineChart className="text-highlight mb-2" size={32} />
-                  <p className="text-center">Line Charts</p>
-                  <p className="text-xs text-gray-400 text-center mt-1">Track changes over time</p>
+                  <p className="text-center">System Health</p>
+                  <p className="text-xs text-gray-400 text-center mt-1">CPU, memory & load trends</p>
                 </motion.div>
                 
                 <motion.div 
@@ -331,8 +331,8 @@ const DataVisualization = () => {
                   transition={{ type: "spring", stiffness: 300 }}
                 >
                   <PieChart className="text-highlight mb-2" size={32} />
-                  <p className="text-center">Pie Charts</p>
-                  <p className="text-xs text-gray-400 text-center mt-1">Show composition of data</p>
+                  <p className="text-center">Request Analysis</p>
+                  <p className="text-xs text-gray-400 text-center mt-1">Endpoint distribution</p>
                 </motion.div>
               </div>
               
@@ -345,15 +345,15 @@ const DataVisualization = () => {
               >
                 <div className="flex items-center mb-4">
                   <TrendingUp className="text-accent mr-2" size={20} />
-                  <h4 className="font-medium text-accent">Data Analysis Process</h4>
+                  <h4 className="font-medium text-accent">Backend Development Process</h4>
                 </div>
                 <ol className="space-y-3">
                   {[
-                    "Data Collection & Cleaning",
-                    "Exploratory Data Analysis",
-                    "Statistical Modeling",
-                    "Data Visualization",
-                    "Insights & Recommendations"
+                    "API Design & Architecture",
+                    "Authentication & Authorization",
+                    "Database Design & Optimization",
+                    "Performance Monitoring",
+                    "Scalability & Security"
                   ].map((step, index) => (
                     <motion.li 
                       key={index}

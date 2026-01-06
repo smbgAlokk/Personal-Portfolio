@@ -1,13 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  ExternalLink,
-  Database,
-  Code,
-  Music,
-  LineChart,
-  BarChart,
-  PieChart,
-} from "lucide-react";
+import { ExternalLink, Database, Code, LineChart } from "lucide-react";
 
 const About = () => {
   return (
@@ -40,12 +32,14 @@ const About = () => {
             {/* Text Section */}
             <div>
               <p className="text-gray-300 text-base xs:text-lg leading-relaxed mb-4 sm:mb-6">
-                I'm an enthusiastic{" "}
-                <span className="text-accent font-semibold">Data Analyst</span>{" "}
-                with a passion for finding insights in raw data. Skilled in
-                Excel, SQL, Power BI, and Python (Pandas, Numpy, Seaborn,
-                Matplotlib), I specialize in cleaning, visualizing, and
-                transforming data into clear business stories.
+                I'm a{" "}
+                <span className="text-accent font-semibold">
+                  Senior Software Developer
+                </span>{" "}
+                with expertise in building scalable backend systems and robust
+                APIs. Specialized in JWT authentication, RESTful & GraphQL APIs,
+                microservices architecture, and system design. I architect
+                solutions that are secure, performant, and maintainable.
               </p>
 
               {/* Skills with Icons */}
@@ -56,14 +50,14 @@ const About = () => {
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <div className="p-1.5 xs:p-2 bg-primary rounded-full mr-2 xs:mr-3">
-                    <Database className="text-accent" size={16} />
+                    <Code className="text-accent" size={16} />
                   </div>
                   <div>
                     <h3 className="font-medium text-accent text-sm xs:text-base">
-                      📊 Data Analytics
+                      🔐 Authentication
                     </h3>
                     <p className="text-xs xs:text-sm text-gray-400">
-                      SQL, Python, Excel, Power BI
+                      JWT, OAuth2, Passport.js
                     </p>
                   </div>
                 </motion.div>
@@ -74,12 +68,14 @@ const About = () => {
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <div className="p-2 bg-primary rounded-full mr-3">
-                    <Code className="text-highlight" size={20} />
+                    <Database className="text-highlight" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-medium text-highlight">🖥️ Web Dev</h3>
+                    <h3 className="font-medium text-highlight">
+                      🌐 API Design
+                    </h3>
                     <p className="text-sm text-gray-400">
-                      React, Next.js, Tailwind
+                      REST, GraphQL, WebSocket
                     </p>
                   </div>
                 </motion.div>
@@ -90,12 +86,14 @@ const About = () => {
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <div className="p-2 bg-primary rounded-full mr-3">
-                    <Music className="text-orange-300" size={20} />
+                    <LineChart className="text-orange-300" size={20} />
                   </div>
                   <div>
-                    <h3 className="font-medium text-orange-300">🎶 Music</h3>
+                    <h3 className="font-medium text-orange-300">
+                      🏗️ Architecture
+                    </h3>
                     <p className="text-sm text-gray-400">
-                      Guitar, Piano, Production
+                      Microservices, System Design
                     </p>
                   </div>
                 </motion.div>
@@ -104,23 +102,23 @@ const About = () => {
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
                 My expertise includes{" "}
                 <span className="text-accent font-semibold">
-                  Data Analysis, Data Visualization, and Business Intelligence
+                  Backend Architecture, API Development, and System Design
                 </span>
-                . I'm passionate about transforming complex datasets into
-                actionable insights that drive business decisions and create
-                value.
+                . I'm passionate about building scalable, secure, and
+                maintainable backend systems that power modern applications and
+                drive business growth.
               </p>
 
-              {/* Data Visualization Icons */}
+              {/* Technology Stack Icons */}
               <div className="flex justify-center gap-6 mb-6">
                 <motion.div
                   className="flex flex-col items-center"
                   whileHover={{ y: -5 }}
                 >
                   <div className="p-3 bg-primary-dark rounded-full border border-accent/30 mb-2">
-                    <BarChart size={24} className="text-accent" />
+                    <Code size={24} className="text-accent" />
                   </div>
-                  <span className="text-xs text-gray-400">Bar Charts</span>
+                  <span className="text-xs text-gray-400">Backend</span>
                 </motion.div>
 
                 <motion.div
@@ -128,9 +126,9 @@ const About = () => {
                   whileHover={{ y: -5 }}
                 >
                   <div className="p-3 bg-primary-dark rounded-full border border-highlight/30 mb-2">
-                    <LineChart size={24} className="text-highlight" />
+                    <Database size={24} className="text-highlight" />
                   </div>
-                  <span className="text-xs text-gray-400">Line Charts</span>
+                  <span className="text-xs text-gray-400">APIs</span>
                 </motion.div>
 
                 <motion.div
@@ -138,9 +136,9 @@ const About = () => {
                   whileHover={{ y: -5 }}
                 >
                   <div className="p-3 bg-primary-dark rounded-full border border-orange-300/30 mb-2">
-                    <PieChart size={24} className="text-orange-300" />
+                    <LineChart size={24} className="text-orange-300" />
                   </div>
-                  <span className="text-xs text-gray-400">Pie Charts</span>
+                  <span className="text-xs text-gray-400">Architecture</span>
                 </motion.div>
               </div>
               <a

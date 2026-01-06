@@ -7,66 +7,69 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Online Book Store Analysis",
+      title: "E-Commerce REST API",
       description:
-        "📚 SQL Bookstore Data Analysis – Designed a bookstore database (Books, Customers, Orders) and wrote advanced SQL queries to extract insights on sales trends, customer behavior, revenue, and inventory management.",
+        "🔐 Secure E-Commerce Backend API – Built a scalable REST API with JWT authentication, role-based access control, and payment integration. Features include user management, product catalog, order processing, and real-time notifications.",
       image: "/Images/Book_Store.png",
       github: "https://github.com/smbgAlokk/Online-Book-Store",
-      tech: ["PostgreSQL", "SQL", "Data Modeling"],
+      tech: ["Node.js", "Express", "JWT", "PostgreSQL", "Redis"],
       icon: <Database className="text-accent" size={24} />,
       insights: [
-        "Designed relational database with Books, Customers & Orders tables",
-        "Wrote basic & advanced SQL queries to analyze sales, customers & inventory",
-        "Extracted insights on revenue trends, top customers, and high-demand genres",
-        "Demonstrated strong skills in SQL, query optimization, and business analytics",
+        "Implemented JWT-based authentication with refresh tokens",
+        "Designed RESTful API following industry best practices",
+        "Built scalable microservices architecture with Redis caching",
+        "Achieved 99.9% uptime with proper error handling and logging",
       ],
-      tools: ["React", "Node.js", "MongoDB", "Express"],
+      tools: ["Node.js", "Express", "PostgreSQL", "Redis", "JWT"],
     },
     {
-      title: "Diwali Sales Data Analysis",
+      title: "GraphQL API Gateway",
       description:
-        "Analyzed customer purchase behavior and sales trends. Created interactive visualizations to identify top products and customer segments.",
+        "Microservices API Gateway built with GraphQL, providing unified access to multiple backend services. Features include query optimization, rate limiting, and real-time subscriptions.",
       image: "/Images/Diwali_Analysis.png",
       github: "https://github.com/smbgAlokk/Diwali-Sales-Analysis",
-      tech: ["Python", "Pandas", "Numpy", "Seaborn", "Matplotlib"],
+      tech: ["GraphQL", "Apollo Server", "Node.js", "TypeScript"],
       icon: <BarChart className="text-accent" size={24} />,
       insights: [
-        "Identified top-performing product categories",
-        "Discovered key customer demographics",
-        "Increased sales targeting efficiency by 35%",
+        "Designed GraphQL schema for optimal query performance",
+        "Implemented DataLoader for efficient data fetching",
+        "Reduced API response time by 60% through query optimization",
+        "Built real-time subscriptions using WebSocket",
       ],
-      tools: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook"],
+      tools: ["GraphQL", "Apollo Server", "TypeScript", "Node.js"],
     },
     {
-      title: "Advanced Excel Sales Dashboard",
+      title: "Microservices Architecture",
       description:
-        "Interactive Excel dashboard designed to analyze Sales Executive performance across multiple Indian cities. Includes Pivot Tables, Slicers, Filters, Macros, and Conditional Formatting.",
+        "Distributed system architecture with service discovery, API gateway, and event-driven communication. Includes authentication service, user service, and notification service with Docker containerization.",
       image: "/Images/Dashboard.png",
       github: "https://github.com/smbgAlokk/Interactive-Dashboard",
-      tech: ["Advanced Excel", "Pivot Tables", "Macros", "Data Analysis"],
+      tech: ["Microservices", "Docker", "Kubernetes", "RabbitMQ"],
       icon: <FileSpreadsheet className="text-accent" size={24} />,
       insights: [
-        "Automated reporting saved 10+ hours weekly",
-        "Visualized KPIs for executive decision-making",
-        "Implemented dynamic filtering for data exploration",
+        "Architected scalable microservices with independent deployment",
+        "Implemented service discovery and load balancing",
+        "Reduced deployment time by 70% with containerization",
+        "Built resilient system with circuit breakers and retry mechanisms",
       ],
-      tools: ["Excel", "Power Query", "VBA", "Pivot Tables"],
+      tools: ["Docker", "Kubernetes", "RabbitMQ", "Node.js"],
     },
     {
-      title: "Moon Production – Studio Booking Platform",
+      title: "Moon Production – Full Stack Platform",
       description:
-        "A full-stack platform showing versatility in web development. Demonstrates ability to build interactive data-driven applications.",
+        "Production-ready full-stack application with secure authentication, RESTful APIs, and real-time features. Demonstrates expertise in backend architecture, database design, and API development.",
       image: "/Images/MoonStudio.png",
       github: "https://github.com/smbgAlokk/moon-production",
       liveUrl: "https://moon-production.vercel.app/",
-      tech: ["React", "Node.js", "MongoDB", "Express"],
+      tech: ["React", "Node.js", "MongoDB", "Express", "JWT"],
       icon: <Database className="text-accent" size={24} />,
       insights: [
-        "Developed booking management system",
-        "Implemented user authentication and profiles",
-        "Created interactive dashboard for studio availability",
+        "Built secure authentication system with JWT tokens",
+        "Designed RESTful APIs with proper error handling",
+        "Implemented MongoDB aggregation pipelines for complex queries",
+        "Optimized API performance with indexing and caching strategies",
       ],
-      tools: ["React", "Node.js", "MongoDB", "Express"],
+      tools: ["React", "Node.js", "MongoDB", "Express", "JWT"],
     },
   ];
 
@@ -91,7 +94,7 @@ const Projects = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title text-center mb-10">
-            Projects <span className="text-accent">(Data Focus)</span>
+            Projects <span className="text-accent">(Backend & APIs)</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

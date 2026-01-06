@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: "Projects", to: "projects" },
     { name: "Skills", to: "skills" },
     { name: "GitHub", to: "github" },
-    { name: "Visualization", to: "visualization" },
+    { name: "Monitoring", to: "visualization" },
     { name: "Contact", to: "contact" },
   ];
 

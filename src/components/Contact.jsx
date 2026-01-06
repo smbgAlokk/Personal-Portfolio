@@ -22,15 +22,14 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto">
             <p className="text-center text-gray-300 mb-12">
               Open to{" "}
-              <span className="text-accent font-semibold">Data Analyst</span>{" "}
+              <span className="text-accent font-semibold">Senior Software Developer</span>{" "}
               and{" "}
               <span className="text-highlight font-semibold">
-                Data Engineering
+                Backend Architect
               </span>{" "}
-              opportunities. Let's connect and create something amazing with
-              data. Whether you need help with data analysis, visualization, or
-              building data pipelines, I'm here to help transform your raw data
-              into valuable insights that drive business decisions.
+              opportunities. Let's connect and build scalable, secure backend systems together. 
+              Whether you need expertise in API development, system architecture, JWT authentication, 
+              or microservices design, I'm here to help architect solutions that drive business growth.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">

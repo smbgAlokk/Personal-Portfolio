@@ -124,11 +124,11 @@ const GitHubAnalytics = () => {
 
             <div className="space-y-4">
               {[
-                { name: "Python", percentage: 63, color: "bg-accent" },
-                { name: "SQL", percentage: 40, color: "bg-highlight" },
-                { name: "JavaScript", percentage: 22, color: "bg-green-500" },
-                { name: "TypeScript", percentage: 63.3, color: "bg-green-500" },
-                { name: "HTML/CSS", percentage: 18, color: "bg-purple-500" },
+                { name: "JavaScript", percentage: 35, color: "bg-accent" },
+                { name: "TypeScript", percentage: 30, color: "bg-highlight" },
+                { name: "Python", percentage: 20, color: "bg-green-500" },
+                { name: "SQL", percentage: 10, color: "bg-purple-500" },
+                { name: "Go", percentage: 5, color: "bg-blue-500" },
               ].map((language, index) => (
                 <div key={index} className="space-y-1">
                   <div className="flex justify-between">

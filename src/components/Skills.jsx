@@ -12,54 +12,54 @@ import {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Data Analytics",
-      icon: <Database size={24} />,
-      skills: [
-        { name: "Excel", proficiency: 96, icon: <FileSpreadsheet size={16} /> },
-        {
-          name: "SQL (PostgreSQL)",
-          proficiency: 92,
-          icon: <Database size={16} />,
-        },
-        { name: "Power BI", proficiency: 86, icon: <BarChart size={16} /> },
-        {
-          name: "Data Cleaning",
-          proficiency: 93,
-          icon: <Database size={16} />,
-        },
-        {
-          name: "Data Visualization",
-          proficiency: 90,
-          icon: <PieChart size={16} />,
-        },
-      ],
-    },
-    {
-      title: "Python Libraries",
-      icon: <Code size={24} />,
-      skills: [
-        { name: "Pandas", proficiency: 80, icon: <Database size={16} /> },
-        { name: "NumPy", proficiency: 85, icon: <Database size={16} /> },
-        { name: "Seaborn", proficiency: 80, icon: <LineChart size={16} /> },
-        { name: "Matplotlib", proficiency: 85, icon: <BarChart size={16} /> },
-        { name: "Scikit-learn", proficiency: 75, icon: <Database size={16} /> },
-      ],
-    },
-    {
-      title: "Database",
+      title: "Backend Technologies",
       icon: <Server size={24} />,
       skills: [
-        { name: "PostgreSQL", proficiency: 96, icon: <Database size={16} /> },
-        { name: "MySQL", proficiency: 70, icon: <Database size={16} /> },
-        { name: "MongoDB", proficiency: 60, icon: <Database size={16} /> },
+        { name: "Node.js", proficiency: 95, icon: <Code size={16} /> },
         {
-          name: "Data Modeling",
+          name: "Express.js",
+          proficiency: 92,
+          icon: <Code size={16} />,
+        },
+        { name: "Python", proficiency: 88, icon: <Code size={16} /> },
+        {
+          name: "Django/Flask",
+          proficiency: 85,
+          icon: <Code size={16} />,
+        },
+        {
+          name: "TypeScript",
+          proficiency: 90,
+          icon: <Code size={16} />,
+        },
+      ],
+    },
+    {
+      title: "API & Authentication",
+      icon: <Database size={24} />,
+      skills: [
+        { name: "REST APIs", proficiency: 95, icon: <Database size={16} /> },
+        { name: "GraphQL", proficiency: 85, icon: <Database size={16} /> },
+        { name: "JWT", proficiency: 92, icon: <Code size={16} /> },
+        { name: "OAuth2", proficiency: 88, icon: <Code size={16} /> },
+        { name: "WebSocket", proficiency: 80, icon: <Database size={16} /> },
+      ],
+    },
+    {
+      title: "Architecture & Database",
+      icon: <Server size={24} />,
+      skills: [
+        { name: "System Design", proficiency: 90, icon: <LineChart size={16} /> },
+        { name: "Microservices", proficiency: 88, icon: <Server size={16} /> },
+        { name: "PostgreSQL", proficiency: 92, icon: <Database size={16} /> },
+        {
+          name: "MongoDB",
           proficiency: 85,
           icon: <Database size={16} />,
         },
         {
-          name: "Query Optimization",
-          proficiency: 80,
+          name: "Redis",
+          proficiency: 82,
           icon: <Database size={16} />,
         },
       ],
@@ -79,7 +79,7 @@ const Skills = () => {
           viewport={{ once: true }}
         >
           <h2 className="section-title text-3xl sm:text-4xl md:text-5xl mb-6 sm:mb-8 md:mb-10 text-center">
-            Skills <span className="text-accent">(Data Focus)</span>
+            Skills <span className="text-accent">(Backend & Architecture)</span>
           </h2>
           <div className="grid gap-4 sm:gap-6 md:gap-8 md:grid-cols-2 lg:grid-cols-3 place-items-start">
             {skillCategories.map((category, index) => (

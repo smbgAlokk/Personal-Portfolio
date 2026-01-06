@@ -25,19 +25,20 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-6">
-            Hi, I'm <span className="text-accent">Alok Kumar</span> 👋
+            Hi, I'm <span className="text-accent">Alok</span> 👋
           </h1>
           <h2 className="text-base xs:text-lg sm:text-xl md:text-2xl text-gray-300 mb-2 sm:mb-3 md:mb-4">
-            <span className="text-accent">Data Analyst</span> |{" "}
-            <span className="text-highlight">Aspiring Data Engineer</span>
+            <span className="text-accent">Software Developer</span> |{" "}
+            <span className="text-highlight">Backend Architect</span>
           </h2>
           <p className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-2 sm:mb-3 md:mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-accent to-highlight">
-              Transforming Data into Insights & Action
+              Building Scalable APIs & Robust Backend Systems
             </span>
           </p>
           <p className="max-w-full sm:max-w-xl md:max-w-2xl mx-auto text-gray-300 mb-2 sm:mb-3 md:mb-4 text-xs xs:text-sm sm:text-base md:text-lg leading-relaxed">
-            My Skills
+            Backend-focused JavaScript/TypeScript developer specializing in
+            APIs, authentication, and scalable system design.
           </p>
 
           {/* Floating Skill Icons */}
